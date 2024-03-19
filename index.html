@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-left: 390px;
+           
+        }
+        img{
+            margin-top: -300px ;
+            display: flex;
+        }
+        .md{
+            border: 1px solid black;
+            width:700px;
+            height: 600px;
+            margin-left: 330px;
+            margin-top: 80px;
+            background-color:rgb(134, 244, 238);
+        } 
+      #btn-1:checked~div{
+        transform:rotate(0deg); 
+        transition: ease-in-out;
+        
+      }
+      #btn-2:checked~div{
+        transform:rotate(10deg); 
+        transition: ease-in-out;
+        
+      }
+      #btn-3:checked~div{
+        transform:rotateX(45deg); 
+        transition: ease-in-out;
+        
+      }
+      #btn-4:checked~div{
+        transform:rotateX(100deg); 
+        transition: ease-in-out;
+        
+      }
+      #btn-5:checked~div{
+        transform:rotateY(45deg); 
+        transition: ease-in-out;
+        
+      }
+      #btn-6:checked~div{
+        transform:rotate(45deg); 
+        transition: ease-in-out;
+        
+      }
+      #btn-7:checked~div{
+        transform:rotateY(80deg); 
+        transition: ease-in-out;
+        
+      }
+      #btn-8:checked~div{
+        transform:skew(20deg,20deg); 
+        transition: ease-in-out;
+        
+      }
+      #btn-9:checked~div{
+        transform:skew(30deg,30deg); 
+        transition: ease-in-out;
+        
+      }
+      #btn-10:checked~div{
+        transform:skewX(30deg); 
+        transition: ease-in-out;
+        
+      }
+      #btn-11:checked~div{
+        transform:skewX(40deg); 
+        transition: ease-in-out;
+        
+      }
+      #btn-12:checked~div{
+        transform:skewY(30deg); 
+        transition: ease-in-out;
+        
+      }
+      #btn-13:checked~div{
+        transform:skewY(40deg); 
+        transition: ease-in-out;
+        
+      }
+      #btn-13:checked~div{
+        transform:skewY(40deg); 
+        transition: ease-in-out;
+        
+      }
+      #btn-14:checked~div{
+        transform:translate(20px,10px); 
+        transition: ease-in-out;
+        
+      }
+      #btn-15:checked~div{
+        transform:translate(20px,20px); 
+        transition: ease-in-out;
+        
+      }
+      #btn-16:checked~div{
+        transform:scale(2,2); 
+        transition: ease-in-out;
+        
+      }
+      #btn-17:checked~div{
+        transform:scale(2,3); 
+        transition: ease-in-out;
+        
+      } 
+      #btn-18:checked~div{
+        transform: matrix(0.866,0.7,-0.8,0.866,0,0); 
+        transition: ease-in-out;
+        
+      }
+      #btn-19:checked~div{
+        transform: matrix(0.586,0.8,-0.8,0.586,0,0);
+        transition: ease-in-out;
+        
+      }
+      #btn-20:checked~div{
+        transform: matrix(0.586,0.8,-0.8,0.586,40,30);
+        transition: ease-in-out;
+        
+      }
+      .btn{
+        border: 1px solid black;
+        border-radius: 20px;
+        margin-top: 10px;
+        background-image: repeating-linear-gradient(red,orange,yellow);
+        color: blue;
+
+      }
+.c1{
+    margin-top: -50px;
+    text-align: center;
+    background-image: linear-gradient(red,orange,green,pink);
+
+}
+.c1:is(:hover,:focus){
+    transform: scale(1,2);
+    text-decoration: wavy;
+    transition: 2s;
+}
+
+    </style>
+</head>
+<body>
+    <div class="md">
+        <h3 class="c1">Transforms&Transitions</h3>
+    <input type="radio" value="clickme" id="btn-1" name="btn" class="btn">
+    <label for="btn-1" class="btn">Transform:none</label><br>
+    <input type="radio" value="clickme" id="btn-2" name="btn" class="btn">
+    <label for="btn-2" class="btn">Transform: rotate(10deg)</label><br>
+    <input type="radio" value="clickme" id="btn-6" name="btn"  class="btn" >
+    <label for="btn-6" class="btn">Transform: rotate(45deg)</label><br>
+    <input type="radio" value="clickme" id="btn-3" name="btn"  class="btn">
+    
+    <label for="btn-3" class="btn">Transform: rotateX(45deg)</label><br>
+    <input type="radio" value="clickme" id="btn-4" name="btn"  class="btn">
+    <label for="btn-4"  class="btn">Transform: rotateX(100deg)</label><br>
+    <input type="radio" value="clickme" id="btn-5" name="btn"  class="btn">
+    <label for="btn-5" class="btn">Transform: rotateY(45deg)</label><br>
+    <input type="radio" value="clickme" id="btn-7" name="btn"  class="btn">
+    <label for="btn-7" class="btn">Transform: rotateY(80deg)</label><br>
+    <input type="radio" value="clickme" id="btn-8" name="btn"  class="btn">
+    <label for="btn-8" class="btn">Transform: skew(20deg,20deg)</label><br>
+    <input type="radio" value="clickme" id="btn-9" name="btn"  class="btn">
+    <label for="btn-9" class="btn">Transform: skew(30deg,30deg)</label><br>
+    <input type="radio" value="clickme" id="btn-10" name="btn"  class="btn">
+    <label for="btn-10" class="btn">Transform: skewX(30deg)</label><br>
+    <input type="radio" value="clickme" id="btn-11" name="btn"  class="btn">
+    <label for="btn-11" class="btn">Transform: skewX(40deg)</label><br>
+
+    <input type="radio" value="clickme" id="btn-12" name="btn"  class="btn">
+    <label for="btn-12" class="btn">Transform: skewY(30deg)</label><br>
+    <input type="radio" value="clickme" id="btn-13" name="btn"  class="btn">
+    <label for="btn-13" class="btn">Transform: skewY(40deg)</label><br>
+    <input type="radio" value="clickme" id="btn-14" name="btn"  class="btn">
+    <label for="btn-14" class="btn">Transform: translate(20px,10px)</label><br>
+    <input type="radio" value="clickme" id="btn-15" name="btn"  class="btn">
+    <label for="btn-15" class="btn">Transform: translate(20px,20px)</label><br>
+    <input type="radio" value="clickme" id="btn-16" name="btn"  class="btn">
+    <label for="btn-16" class="btn">Transform: scale(2,2)</label><br>
+    <input type="radio" value="clickme" id="btn-17" name="btn"  class="btn">
+    <label for="btn-17" class="btn">Transform: scale(2,3)</label><br>
+    <input type="radio" value="clickme" id="btn-18" name="btn"  class="btn">
+    <label for="btn-18" class="btn">Transform: matrix(0.866, 0.7,-0.8,0.866,0.0);</label><br>
+    <input type="radio" value="clickme" id="btn-19" name="btn"  class="btn">
+    <label for="btn-19" class="btn">Transform: matrix(0.586, 0.8,-0.8,0.586,0.0);</label><br>
+    <input type="radio" value="clickme" id="btn-20" name="btn"  class="btn">
+    <label for="btn-20" class="btn">Transform: matrix(0.586, 0.8,-0.8,0.586,40.30);</label><br>
+    
+    
+    
+    
+    
+    <div>
+        
+       <img src="./rose.jpeg">
+    </div>
+    </div>
+
+</body>
+</html>
